@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujtaba Alam | Professional Web Developer & Designer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Three.js Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">M<span>.</span>Alam</a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Tech</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link btn-cta">Let's Talk</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-sec">
+            <div class="hero-content">
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span> Available for custom projects
+                </div>
+                <h1 class="hero-title">
+                    Code. Create.<br><span class="gradient-text">Innovate.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    I'm <strong style="color: var(--text-primary);">Mujtaba Alam</strong>, a developer & designer from Kashmir crafting fast, interactive digital platforms and next-gen user interfaces.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span class="mouse-wheel"></span>
+            </div>
+        </section>
+
+        <!-- About / IDE Sandbox Section -->
+        <section id="about" class="about-sec">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="sub-header">Profile</span>
+                    <h2 class="title">About My Approach</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text-panel">
+                        <p class="paragraph">
+                            My focus centers on combining responsive engineering with intuitive design systems. I transform raw concepts into robust products through precise styling, careful layout planning, and clear performance architecture.
+                        </p>
+                        <p class="paragraph">
+                            Whether creating advanced code editor tooling, educational tools, or secure business platforms, my projects are built from the ground up to operate efficiently on any screen.
+                        </p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-num" data-val="100">0</span><span class="stat-suffix">%</span>
+                                <p class="stat-label">Responsive Layouts</p>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-val="16">0</span><span class="stat-suffix">+</span>
+                                <p class="stat-label">GitHub Repositories</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Code IDE Simulation -->
+                    <div class="about-ide-panel">
+                        <div class="ide-header">
+                            <div class="ide-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="ide-tabs">
+                                <button class="ide-tab active" data-file="profile.json">profile.json</button>
+                                <button class="ide-tab" data-file="philosophy.js">philosophy.js</button>
+                            </div>
+                        </div>
+                        <div class="ide-body">
+                            <pre><code class="language-code" id="ide-content">
+<span class="token-comment">// Loading... Click a file above to inspect code.</span>
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-sec">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="sub-header">Expertise</span>
+                    <h2 class="title">Technical Ecosystem</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card tilt-card">
+                        <div class="skill-icon-wrapper purple">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3>Frontend Architecture</h3>
+                        <p>Semantic HTML5, CSS Grid, custom layouts, and clean responsive workflows.</p>
+                    </div>
+
+                    <div class="skill-card tilt-card">
+                        <div class="skill-icon-wrapper cyan">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3>Interactive Scripting</h3>
+                        <p>Modern ES6+ JavaScript, system interactions, and robust state pipelines.</p>
+                    </div>
+
+                    <div class="skill-card tilt-card">
+                        <div class="skill-icon-wrapper green">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3>Cloud Pipelines</h3>
+                        <p>Flexible database management and secure user pipelines powered by Firebase integrations.</p>
+                    </div>
+
+                    <div class="skill-card tilt-card">
+                        <div class="skill-icon-wrapper yellow">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3>UI & Prototyping</h3>
+                        <p>Creating layouts, vector assets, and system concepts directly inside Figma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-sec">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="sub-header">Works</span>
+                    <h2 class="title">Featured Innovations</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card tilt-card">
+                        <div class="project-media">
+                            <div class="tech-glow"></div>
+                            <i class="fa-solid fa-code-branch project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Realtime</span>
+                                <span class="tag">Collaborative</span>
+                            </div>
+                            <h3>Single Code (MD Code)</h3>
+                            <p>A futuristic, highly responsive cloud code editor mimicking key IDE features to build, edit, and collaborate directly from your browser.</p>
+                            <div class="project-links">
+                                <a href="https://singlecode-md.vercel.app" target="_blank" class="proj-link secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card tilt-card">
+                        <div class="project-media">
+                            <div class="tech-glow purple"></div>
+                            <i class="fa-solid fa-globe project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Publishing</span>
+                                <span class="tag">Web Platform</span>
+                                <span class="tag">UI design</span>
+                            </div>
+                            <h3>ArticleGlobe</h3>
+                            <p>An elegant article writing and publishing ecosystem, optimized for layout accessibility, clean markup, and dynamic blogging streams.</p>
+                            <div class="project-links">
+                                <a href="https://articleglobe3.vercel.app" target="_blank" class="proj-link secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card tilt-card">
+                        <div class="project-media">
+                            <div class="tech-glow cyan"></div>
+                            <i class="fa-solid fa-graduation-cap project-placeholder-icon"></i>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Database</span>
+                                <span class="tag">School Admin</span>
+                                <span class="tag">Performance</span>
+                            </div>
+                            <h3>HSS Larnoo Portal</h3>
+                            <p>A structured school administration management dashboard, organizing complex profiles, notifications, and student logistics seamlessly.</p>
+                            <div class="project-links">
+                                <a href="https://hss-larnoo.vercel.app/" target="_blank" class="proj-link secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-sec">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <span class="sub-header">Connection</span>
+                        <h2 class="title">Let's build together</h2>
+                        <p class="paragraph">Have a modern layout query, integration build, or custom web vision? Drop me a line directly. I'll read through your specifications and respond.</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="item-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Contact</h4>
+                                    <a href="mailto:mujtabaalam010@gmail.com" class="item-link">mujtabaalam010@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="item-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <h4>GitHub Workspace</h4>
+                                    <a href="https://github.com/Mujtaba891" target="_blank" class="item-link">github.com/Mujtaba891</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="portfolio-form" class="contact-form" autocomplete="off">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="What should I call you?">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="name@domain.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project Description</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Detail the system, features, and timeline..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mujtaba Alam. All rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Mujtaba891" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:mujtabaalam010@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-hidden">
+        <i class="fa-regular fa-circle-check"></i> <span id="toast-message">Message processed successfully!</span>
+    </div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
